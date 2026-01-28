@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Janindu Gems - Premium gemstones and precious stones collection">
+    <title>Janindu Gems - Premium Gemstones Collection</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- EmailJS Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
+        })();
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Janindu Gems</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Timeless Elegance</h1>
+            <p class="hero-subtitle">Premium Gemstones from Around the World</p>
+            <a href="#collection" class="btn btn-primary">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Featured Collection -->
+    <section id="collection" class="collection">
+        <div class="container">
+            <h2 class="section-title">Our Exclusive Collection</h2>
+            <p class="section-subtitle">Handpicked precious stones of exceptional quality</p>
+            
+            <div class="gem-grid">
+                <div class="gem-card">
+                    <div class="gem-image">
+                        <img src="images/gem1.jpg" alt="Sapphire">
+                        <div class="gem-overlay">
+                            <button class="btn btn-secondary" onclick="openGemDetails('Blue Sapphire', 'Exceptional clarity and deep blue color', 'Starting from $2,500', 'images/gem1.jpg')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="gem-info">
+                        <h3>Blue Sapphire</h3>
+                        <p class="gem-description">Exceptional clarity and deep blue color</p>
+                        <p class="gem-price">Starting from $2,500</p>
+                    </div>
+                </div>
+
+                <div class="gem-card">
+                    <div class="gem-image">
+                        <img src="images/gem2.jpg" alt="Ruby">
+                        <div class="gem-overlay">
+                            <button class="btn btn-secondary" onclick="openGemDetails('Burmese Ruby', 'Vivid red with pigeon blood color', 'Starting from $3,200', 'images/gem2.jpg')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="gem-info">
+                        <h3>Burmese Ruby</h3>
+                        <p class="gem-description">Vivid red with pigeon blood color</p>
+                        <p class="gem-price">Starting from $3,200</p>
+                    </div>
+                </div>
+
+                <div class="gem-card">
+                    <div class="gem-image">
+                        <img src="images/gem3.jpg" alt="Emerald">
+                        <div class="gem-overlay">
+                            <button class="btn btn-secondary" onclick="openGemDetails('Colombian Emerald', 'Rich green with natural inclusions', 'Starting from $2,800', 'images/gem3.jpg')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="gem-info">
+                        <h3>Colombian Emerald</h3>
+                        <p class="gem-description">Rich green with natural inclusions</p>
+                        <p class="gem-price">Starting from $2,800</p>
+                    </div>
+                </div>
+
+                <div class="gem-card">
+                    <div class="gem-image">
+                        <img src="images/gem4.jpg" alt="Diamond">
+                        <div class="gem-overlay">
+                            <button class="btn btn-secondary" onclick="openGemDetails('White Diamond', 'Brilliant cut with excellent clarity', 'Starting from $4,500', 'images/gem4.jpg')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="gem-info">
+                        <h3>White Diamond</h3>
+                        <p class="gem-description">Brilliant cut with excellent clarity</p>
+                        <p class="gem-price">Starting from $4,500</p>
+                    </div>
+                </div>
+
+                <div class="gem-card">
+                    <div class="gem-image">
+                        <img src="images/gem5.jpg" alt="Amethyst">
+                        <div class="gem-overlay">
+                            <button class="btn btn-secondary" onclick="openGemDetails('Royal Amethyst', 'Deep purple with exceptional size', 'Starting from $1,200', 'images/gem5.jpg')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="gem-info">
+                        <h3>Royal Amethyst</h3>
+                        <p class="gem-description">Deep purple with exceptional size</p>
+                        <p class="gem-price">Starting from $1,200</p>
+                    </div>
+                </div>
+
+                <div class="gem-card">
+                    <div class="gem-image">
+                        <img src="images/gem6.jpg" alt="Topaz">
+                        <div class="gem-overlay">
+                            <button class="btn btn-secondary" onclick="openGemDetails('Imperial Topaz', 'Golden orange with perfect cut', 'Starting from $1,800', 'images/gem6.jpg')">View Details</button>
+                        </div>
+                    </div>
+                    <div class="gem-info">
+                        <h3>Imperial Topaz</h3>
+                        <p class="gem-description">Golden orange with perfect cut</p>
+                        <p class="gem-price">Starting from $1,800</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Janindu Gems</h2>
+                    <p>With over two decades of expertise in the gemstone industry, Janindu Gems has established itself as a trusted source for premium gemstones and precious stones.</p>
+                    <p>We source our gemstones directly from renowned mines around the world, ensuring authenticity, quality, and ethical practices. Each stone is carefully selected and certified by expert gemologists.</p>
+                    <p>Our commitment to excellence and customer satisfaction has made us a preferred choice for collectors, jewelers, and gem enthusiasts worldwide.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <h4>Certified Authentic</h4>
+                            <p>All gems come with certification</p>
+                        </div>
+                        <div class="feature">
+                            <h4>Ethical Sourcing</h4>
+                            <p>Responsible mining practices</p>
+                        </div>
+                        <div class="feature">
+                            <h4>Expert Guidance</h4>
+                            <p>Professional consultation available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/gemLogo.jpg" alt="About Janindu Gems">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">We'd love to hear from you</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h4>Location</h4>
+                        <p>123 Gem Street<br>Colombo, Sri Lanka</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Phone</h4>
+                        <p>+94 11 234 5678</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Email</h4>
+                        <p>janinduchamika2002@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Hours</h4>
+                        <p>Mon - Sat: 9:00 AM - 6:00 PM<br>Sunday: Closed</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="from_name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="from_email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Janindu Gems</h3>
+                    <p>Your trusted partner in premium gemstones</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#collection">Collection</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Janindu Gems. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/simple-modal.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
